@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {config} from 'rxjs';
 import {NotFoundComponent} from './page/not-found/not-found.component';
+import {TemplateComponent} from './thema/template/template.component';
 
 
 const routes: Routes = [
@@ -11,6 +12,7 @@ const routes: Routes = [
   },
   {
     path: 'pages',
+    component: TemplateComponent,
     children: [
       {
         path: 'biblioteca',
