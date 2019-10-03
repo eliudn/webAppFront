@@ -58,15 +58,16 @@
 <router-outlet></router-outlet>
 
 -->
-<!--Nav Bar-->
+
 <app-navbar></app-navbar>
+<div class="container-fluid">
+  <div class="row">
+    
+    <app-nav></app-nav>
 
-<!-- contenido principal -->
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+      <router-outlet></router-outlet>
+    </main>
 
-
-<!-- Sidebar -->
- <app-nav></app-nav>
-
- <!--body-->
- 
-
+  </div>
+</div>
