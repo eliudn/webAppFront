@@ -7,6 +7,7 @@ import { NotFoundComponent } from './page/not-found/not-found.component';
 import { TemplateComponent } from './thema/template/template.component';
 import { NavbarComponent } from './thema/template/components/navbar/navbar.component';
 import { NavComponent } from './thema/template/components/nav/nav.component';
+import { ContenComponent } from './thema/template/components/conten/conten.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NavComponent } from './thema/template/components/nav/nav.component';
     NotFoundComponent,
     TemplateComponent,
     NavbarComponent,
-    NavComponent
+    NavComponent,
+    ContenComponent
   ],
   imports: [
     BrowserModule,
