@@ -24,7 +24,7 @@ export class NavComponent implements OnInit {
       {
         description: 'Biblioteca',
         link: '',
-        icon: '',
+        icon: 'fas fa-book fa-fw',
         child: true,
         childrens: [
           {
@@ -57,7 +57,7 @@ export class NavComponent implements OnInit {
       {
         description: 'Academico',
         link: '',
-        icon: '',
+        icon: 'fas fa-allergies fa-fw' ,
         child: true,
         childrens: [
           {
@@ -91,7 +91,7 @@ export class NavComponent implements OnInit {
       {
         description: 'Administrativo',
         link: '',
-        icon: '',
+        icon: 'fas fa-tasks fa-fw',
         child:  true,
         childrens: [
           {
@@ -113,7 +113,7 @@ export class NavComponent implements OnInit {
         ]
       }
 
-    ];
+    ]
   }
 
 }

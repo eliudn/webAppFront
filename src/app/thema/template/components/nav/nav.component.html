@@ -16,17 +16,17 @@
 
                 <li class="nav-item dropdown" *ngIf="option.child">
 
-                  <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-<!--                    <i class="{{option.icon}}"></i>-->
+                  <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class={{option.icon}}></i>
                     <span>{{option.description}}</span>
                   </a>
-                  <ng-container *ngFor="let item of option.childrens">
+                  
                     <div class="dropdown-menu" aria-labelledby="pagesDropdown" >
-
-                      <a class="dropdown-item" routerLink]="item.link">{{item.description}}</a>
-
-                    </div>
-                  </ng-container>
+                      <ng-container *ngFor="let item of option.childrens">
+                          <a class="dropdown-item" [routerLink]="item.link">{{item.description}}</a>
+                      </ng-container>
+                    </div> 
+                  
 
                 </li>
 
@@ -57,7 +57,7 @@
 
                     <router-outlet></router-outlet>
 
-                </div>
+               </div>
           <!-- /.container-fluid -->
 
           <!-- Sticky Footer -->
