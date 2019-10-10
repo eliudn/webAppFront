@@ -9,6 +9,7 @@ import { NavbarComponent } from './thema/template/components/navbar/navbar.compo
 import { NavComponent } from './thema/template/components/nav/nav.component';
 import { ContenComponent } from './thema/template/components/conten/conten.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
