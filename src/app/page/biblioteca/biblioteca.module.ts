@@ -10,6 +10,8 @@ import { LibrosComponent } from './libros/libros.component';
 import { ExistenciasComponent } from './existencias/existencias.component';
 import { CrudEditorialComponent } from './editorial/components/crud-editorial/crud-editorial.component';
 import { ListarComponentComponent } from './editorial/components/listar-component/listar-component.component';
+import { ListComponentComponent } from './areas/component/list-component/list-component.component';
+import { CrudComponentComponent } from './areas/component/crud-component/crud-component.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { ListarComponentComponent } from './editorial/components/listar-componen
     LibrosComponent,
     ExistenciasComponent,
     CrudEditorialComponent,
-    ListarComponentComponent
+    ListarComponentComponent,
+    ListComponentComponent,
+    CrudComponentComponent
    ],
   imports: [
     CommonModule,
