@@ -7,22 +7,31 @@ import {TemplateComponent} from './thema/template/template.component';
 
 const routes: Routes = [
   {
-    path: 'auth',
-    loadChildren: './auth/auth.module#AuthModule'
+    path                :  'auth',
+    loadChildren  :  './auth/auth.module#AuthModule'
   },
   {
-    path: 'pages',
-    component: TemplateComponent,
+    path               :  'pages',
+    component   :  TemplateComponent,
     children: [
       {
-        path: 'biblioteca',
-        loadChildren: './page/biblioteca/biblioteca.module#BibliotecaModule'
+        path                :  'biblioteca',
+        loadChildren  :  './page/biblioteca/biblioteca.module#BibliotecaModule'
+      },
+      {
+        path                :  'academico',
+        loadChildren  :  './page/academico/academico.module#AcademicoModule'
+      },
+      {
+        path              : 'administrativo',
+        loadChildren : './page/administrativo/administrativo.module#AdministrativoModule'
       }
+
     ]
   },
   {
-    path: '**',
-    component: NotFoundComponent
+    path             :  '**',
+    component : NotFoundComponent
   }
 ];
 
