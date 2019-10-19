@@ -7,9 +7,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CrudComponentComponent implements OnInit {
 
+  public codigo: string;
+  public descrition: string;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  // metodo de cattura de datos 
+  saveForm() {
+
+    alert('la informacion salvada es: '+ this.descrition);
+
+  }
+
+  showLength( data, maxx) {
+
+    if (data.length >= maxx){
+
+      alert( 'solo puedes escribir menos'+ maxx);
+
+    }
+    
   }
 
 }

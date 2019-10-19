@@ -12,7 +12,8 @@ import { CrudEditorialComponent } from './editorial/components/crud-editorial/cr
 import { ListarComponentComponent } from './editorial/components/listar-component/listar-component.component';
 import { ListComponentComponent } from './areas/component/list-component/list-component.component';
 import { CrudComponentComponent } from './areas/component/crud-component/crud-component.component';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CrudComponent } from './autores/componet/crud/crud.component';
 
 @NgModule({
   declarations: [
@@ -25,11 +26,15 @@ import { CrudComponentComponent } from './areas/component/crud-component/crud-co
     CrudEditorialComponent,
     ListarComponentComponent,
     ListComponentComponent,
-    CrudComponentComponent
+    CrudComponentComponent,
+    CrudComponent
    ],
   imports: [
     CommonModule,
-    BibliotecaRoutingModule
+    BibliotecaRoutingModule, 
+    FormsModule, 
+    ReactiveFormsModule
+
   ]
 })
 export class BibliotecaModule { }
